@@ -1,66 +1,69 @@
-[debug] [2023-02-09T04:58:45.582Z] ----------------------------------------------------------------------
-[debug] [2023-02-09T04:58:45.584Z] Command:       D:\Program Files\Node\node.exe C:\Users\mjpoo\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting
-[debug] [2023-02-09T04:58:45.584Z] CLI Version:   11.22.0
-[debug] [2023-02-09T04:58:45.584Z] Platform:      win32
-[debug] [2023-02-09T04:58:45.584Z] Node Version:  v18.13.0
-[debug] [2023-02-09T04:58:45.585Z] Time:          Wed Feb 08 2023 23:58:45 GMT-0500 (Eastern Standard Time)
-[debug] [2023-02-09T04:58:45.586Z] ----------------------------------------------------------------------
+[debug] [2023-02-09T07:18:50.584Z] ----------------------------------------------------------------------
+[debug] [2023-02-09T07:18:50.586Z] Command:       D:\Program Files\Node\node.exe C:\Users\mjpoo\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-02-09T07:18:50.587Z] CLI Version:   11.22.0
+[debug] [2023-02-09T07:18:50.587Z] Platform:      win32
+[debug] [2023-02-09T07:18:50.587Z] Node Version:  v18.13.0
+[debug] [2023-02-09T07:18:50.588Z] Time:          Thu Feb 09 2023 02:18:50 GMT-0500 (Eastern Standard Time)
+[debug] [2023-02-09T07:18:50.588Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2023-02-09T04:58:45.651Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2023-02-09T04:58:45.651Z] > authorizing via signed-in user (mjpool99@gmail.com)
-[debug] [2023-02-09T04:58:45.651Z] [iam] checking project dbdtracker for permissions ["firebase.projects.get","firebasehosting.sites.update"]
-[debug] [2023-02-09T04:58:45.653Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/dbdtracker:testIamPermissions [none]
-[debug] [2023-02-09T04:58:45.654Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/dbdtracker:testIamPermissions x-goog-quota-user=projects/dbdtracker
-[debug] [2023-02-09T04:58:45.654Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/dbdtracker:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
-[debug] [2023-02-09T04:58:45.878Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/dbdtracker:testIamPermissions 200
-[debug] [2023-02-09T04:58:45.879Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/dbdtracker:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
-[debug] [2023-02-09T04:58:45.880Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/dbdtracker [none]
-[debug] [2023-02-09T04:58:46.051Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/dbdtracker 200
-[debug] [2023-02-09T04:58:46.051Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/dbdtracker {"projectId":"dbdtracker","projectNumber":"167066146805","displayName":"DBDTracker","name":"projects/dbdtracker","resources":{"hostingSite":"dbdtracker","storageBucket":"dbdtracker.appspot.com","locationId":"us-east1"},"state":"ACTIVE","etag":"1_c1bf5091-d74e-47f3-b667-264938cb36f3"}
-[debug] [2023-02-09T04:58:49.264Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/dbdtracker/sites pageToken=&pageSize=10
-[debug] [2023-02-09T04:58:49.740Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/dbdtracker/sites 200
-[debug] [2023-02-09T04:58:49.740Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/dbdtracker/sites {"sites":[{"name":"projects/dbdtracker/sites/dbdtracker","defaultUrl":"https://dbdtracker.web.app","appId":"1:167066146805:web:1dbc2d32e58165859bb2bc","type":"DEFAULT_SITE"}]}
-[debug] [2023-02-09T04:58:49.740Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:167066146805:web:1dbc2d32e58165859bb2bc/config [none]
-[debug] [2023-02-09T04:58:50.201Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:167066146805:web:1dbc2d32e58165859bb2bc/config 200
-[debug] [2023-02-09T04:58:50.201Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:167066146805:web:1dbc2d32e58165859bb2bc/config {"projectId":"dbdtracker","appId":"1:167066146805:web:1dbc2d32e58165859bb2bc","storageBucket":"dbdtracker.appspot.com","locationId":"us-east1","apiKey":"AIzaSyB-rwxK-0S-GG0bVLffPa01caPfRv6VQnk","authDomain":"dbdtracker.firebaseapp.com","messagingSenderId":"167066146805","measurementId":"G-TR7R7E24R8"}
-[debug] [2023-02-09T04:59:11.661Z] TypeError: Cannot read properties of null (reading 'toString')
+[debug] [2023-02-09T07:18:50.653Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-02-09T07:18:50.654Z] > authorizing via signed-in user (mjpool99@gmail.com)
+[debug] [2023-02-09T07:18:50.654Z] [iam] checking project dbdtracker for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-02-09T07:18:50.656Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/dbdtracker:testIamPermissions [none]
+[debug] [2023-02-09T07:18:50.656Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/dbdtracker:testIamPermissions x-goog-quota-user=projects/dbdtracker
+[debug] [2023-02-09T07:18:50.656Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/dbdtracker:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-02-09T07:18:50.874Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/dbdtracker:testIamPermissions 200
+[debug] [2023-02-09T07:18:50.874Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/dbdtracker:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-02-09T07:18:50.875Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/dbdtracker/serviceAccounts/dbdtracker@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2023-02-09T07:18:50.875Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/dbdtracker/serviceAccounts/dbdtracker@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2023-02-09T07:18:51.101Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/dbdtracker/serviceAccounts/dbdtracker@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2023-02-09T07:18:51.101Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/dbdtracker/serviceAccounts/dbdtracker@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2023-02-09T07:18:51.101Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/dbdtracker [none]
+[debug] [2023-02-09T07:18:51.349Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/dbdtracker 200
+[debug] [2023-02-09T07:18:51.349Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/dbdtracker {"projectId":"dbdtracker","projectNumber":"167066146805","displayName":"DBDTracker","name":"projects/dbdtracker","resources":{"hostingSite":"dbdtracker","storageBucket":"dbdtracker.appspot.com","locationId":"us-east1"},"state":"ACTIVE","etag":"1_c1bf5091-d74e-47f3-b667-264938cb36f3"}
+[debug] [2023-02-09T07:18:55.254Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/dbdtracker/sites pageToken=&pageSize=10
+[debug] [2023-02-09T07:18:55.654Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/dbdtracker/sites 200
+[debug] [2023-02-09T07:18:55.654Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/dbdtracker/sites {"sites":[{"name":"projects/dbdtracker/sites/dbdtracker","defaultUrl":"https://dbdtracker.web.app","appId":"1:167066146805:web:1dbc2d32e58165859bb2bc","type":"DEFAULT_SITE"}]}
+[debug] [2023-02-09T07:18:55.654Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:167066146805:web:1dbc2d32e58165859bb2bc/config [none]
+[debug] [2023-02-09T07:18:56.136Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:167066146805:web:1dbc2d32e58165859bb2bc/config 200
+[debug] [2023-02-09T07:18:56.136Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:167066146805:web:1dbc2d32e58165859bb2bc/config {"projectId":"dbdtracker","appId":"1:167066146805:web:1dbc2d32e58165859bb2bc","storageBucket":"dbdtracker.appspot.com","locationId":"us-east1","apiKey":"AIzaSyB-rwxK-0S-GG0bVLffPa01caPfRv6VQnk","authDomain":"dbdtracker.firebaseapp.com","messagingSenderId":"167066146805","measurementId":"G-TR7R7E24R8"}
+[debug] [2023-02-09T07:19:19.952Z] TypeError: Cannot read properties of null (reading 'toString')
     at ɵcodegenFunctionsDirectory (C:\Users\mjpoo\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\next\index.js:222:18)
     at async prepareFrameworks (C:\Users\mjpoo\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\index.js:306:84)
     at async deploy (C:\Users\mjpoo\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:53:13)
 [error] 
 [error] Error: An unexpected error has occurred.
-[debug] [2023-02-09T05:00:15.375Z] ----------------------------------------------------------------------
-[debug] [2023-02-09T05:00:15.377Z] Command:       D:\Program Files\Node\node.exe C:\Users\mjpoo\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --debug
-[debug] [2023-02-09T05:00:15.377Z] CLI Version:   11.22.0
-[debug] [2023-02-09T05:00:15.377Z] Platform:      win32
-[debug] [2023-02-09T05:00:15.377Z] Node Version:  v18.13.0
-[debug] [2023-02-09T05:00:15.378Z] Time:          Thu Feb 09 2023 00:00:15 GMT-0500 (Eastern Standard Time)
-[debug] [2023-02-09T05:00:15.378Z] ----------------------------------------------------------------------
+[debug] [2023-02-09T07:20:05.852Z] ----------------------------------------------------------------------
+[debug] [2023-02-09T07:20:05.855Z] Command:       D:\Program Files\Node\node.exe C:\Users\mjpoo\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-02-09T07:20:05.855Z] CLI Version:   11.22.0
+[debug] [2023-02-09T07:20:05.855Z] Platform:      win32
+[debug] [2023-02-09T07:20:05.856Z] Node Version:  v18.13.0
+[debug] [2023-02-09T07:20:05.856Z] Time:          Thu Feb 09 2023 02:20:05 GMT-0500 (Eastern Standard Time)
+[debug] [2023-02-09T07:20:05.857Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2023-02-09T05:00:15.454Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2023-02-09T05:00:15.455Z] > authorizing via signed-in user (mjpool99@gmail.com)
-[debug] [2023-02-09T05:00:15.455Z] [iam] checking project dbdtracker for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]
-[debug] [2023-02-09T05:00:15.457Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/dbdtracker:testIamPermissions [none]
-[debug] [2023-02-09T05:00:15.457Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/dbdtracker:testIamPermissions x-goog-quota-user=projects/dbdtracker
-[debug] [2023-02-09T05:00:15.458Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/dbdtracker:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
-[debug] [2023-02-09T05:00:15.643Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/dbdtracker:testIamPermissions 200
-[debug] [2023-02-09T05:00:15.643Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/dbdtracker:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
-[debug] [2023-02-09T05:00:15.644Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/dbdtracker/serviceAccounts/dbdtracker@appspot.gserviceaccount.com:testIamPermissions [none]
-[debug] [2023-02-09T05:00:15.644Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/dbdtracker/serviceAccounts/dbdtracker@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
-[debug] [2023-02-09T05:00:15.854Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/dbdtracker/serviceAccounts/dbdtracker@appspot.gserviceaccount.com:testIamPermissions 200
-[debug] [2023-02-09T05:00:15.854Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/dbdtracker/serviceAccounts/dbdtracker@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
-[debug] [2023-02-09T05:00:15.855Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/dbdtracker [none]
-[debug] [2023-02-09T05:00:16.115Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/dbdtracker 200
-[debug] [2023-02-09T05:00:16.115Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/dbdtracker {"projectId":"dbdtracker","projectNumber":"167066146805","displayName":"DBDTracker","name":"projects/dbdtracker","resources":{"hostingSite":"dbdtracker","storageBucket":"dbdtracker.appspot.com","locationId":"us-east1"},"state":"ACTIVE","etag":"1_c1bf5091-d74e-47f3-b667-264938cb36f3"}
-[debug] [2023-02-09T05:00:19.252Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/dbdtracker/sites pageToken=&pageSize=10
-[debug] [2023-02-09T05:00:19.636Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/dbdtracker/sites 200
-[debug] [2023-02-09T05:00:19.636Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/dbdtracker/sites {"sites":[{"name":"projects/dbdtracker/sites/dbdtracker","defaultUrl":"https://dbdtracker.web.app","appId":"1:167066146805:web:1dbc2d32e58165859bb2bc","type":"DEFAULT_SITE"}]}
-[debug] [2023-02-09T05:00:19.637Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:167066146805:web:1dbc2d32e58165859bb2bc/config [none]
-[debug] [2023-02-09T05:00:20.113Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:167066146805:web:1dbc2d32e58165859bb2bc/config 200
-[debug] [2023-02-09T05:00:20.114Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:167066146805:web:1dbc2d32e58165859bb2bc/config {"projectId":"dbdtracker","appId":"1:167066146805:web:1dbc2d32e58165859bb2bc","storageBucket":"dbdtracker.appspot.com","locationId":"us-east1","apiKey":"AIzaSyB-rwxK-0S-GG0bVLffPa01caPfRv6VQnk","authDomain":"dbdtracker.firebaseapp.com","messagingSenderId":"167066146805","measurementId":"G-TR7R7E24R8"}
-[debug] [2023-02-09T05:00:41.571Z] TypeError: Cannot read properties of null (reading 'toString')
-    at ɵcodegenFunctionsDirectory (C:\Users\mjpoo\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\next\index.js:222:18)
-    at async prepareFrameworks (C:\Users\mjpoo\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\index.js:306:84)
+[debug] [2023-02-09T07:20:05.940Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-02-09T07:20:05.940Z] > authorizing via signed-in user (mjpool99@gmail.com)
+[debug] [2023-02-09T07:20:05.940Z] [iam] checking project dbdtracker for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-02-09T07:20:05.943Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/dbdtracker:testIamPermissions [none]
+[debug] [2023-02-09T07:20:05.943Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/dbdtracker:testIamPermissions x-goog-quota-user=projects/dbdtracker
+[debug] [2023-02-09T07:20:05.943Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/dbdtracker:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-02-09T07:20:06.241Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/dbdtracker:testIamPermissions 200
+[debug] [2023-02-09T07:20:06.241Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/dbdtracker:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-02-09T07:20:06.242Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/dbdtracker/serviceAccounts/dbdtracker@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2023-02-09T07:20:06.242Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/dbdtracker/serviceAccounts/dbdtracker@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2023-02-09T07:20:06.484Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/dbdtracker/serviceAccounts/dbdtracker@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2023-02-09T07:20:06.484Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/dbdtracker/serviceAccounts/dbdtracker@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2023-02-09T07:20:06.486Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/dbdtracker [none]
+[debug] [2023-02-09T07:20:06.795Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/dbdtracker 200
+[debug] [2023-02-09T07:20:06.795Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/dbdtracker {"projectId":"dbdtracker","projectNumber":"167066146805","displayName":"DBDTracker","name":"projects/dbdtracker","resources":{"hostingSite":"dbdtracker","storageBucket":"dbdtracker.appspot.com","locationId":"us-east1"},"state":"ACTIVE","etag":"1_c1bf5091-d74e-47f3-b667-264938cb36f3"}
+[debug] [2023-02-09T07:20:10.454Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/dbdtracker/sites pageToken=&pageSize=10
+[debug] [2023-02-09T07:20:10.784Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/dbdtracker/sites 200
+[debug] [2023-02-09T07:20:10.784Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/dbdtracker/sites {"sites":[{"name":"projects/dbdtracker/sites/dbdtracker","defaultUrl":"https://dbdtracker.web.app","appId":"1:167066146805:web:1dbc2d32e58165859bb2bc","type":"DEFAULT_SITE"}]}
+[debug] [2023-02-09T07:20:10.785Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:167066146805:web:1dbc2d32e58165859bb2bc/config [none]
+[debug] [2023-02-09T07:20:11.204Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:167066146805:web:1dbc2d32e58165859bb2bc/config 200
+[debug] [2023-02-09T07:20:11.204Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:167066146805:web:1dbc2d32e58165859bb2bc/config {"projectId":"dbdtracker","appId":"1:167066146805:web:1dbc2d32e58165859bb2bc","storageBucket":"dbdtracker.appspot.com","locationId":"us-east1","apiKey":"AIzaSyB-rwxK-0S-GG0bVLffPa01caPfRv6VQnk","authDomain":"dbdtracker.firebaseapp.com","messagingSenderId":"167066146805","measurementId":"G-TR7R7E24R8"}
+[debug] [2023-02-09T07:20:11.262Z] Error: Epic fail.
+    at prepareFrameworks (C:\Users\mjpoo\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\index.js:228:19)
     at async deploy (C:\Users\mjpoo\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:53:13)
 [error] 
 [error] Error: An unexpected error has occurred.
