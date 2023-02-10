@@ -16,6 +16,7 @@
 /build
 /.env.local
 /functions
+/firebase
 # misc
 .DS_Store
 *.pem
