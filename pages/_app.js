@@ -3,7 +3,7 @@ import Head from 'next/head'
 import icon from "../public/Icon.svg";
 import Script from 'next/script';
 import { SessionProvider } from 'next-auth/react';
-export default function App({ Component, pageProps }) {
+export default function App({ Component, pageProps:{session, ...pageProps} }) {
   return (
     <>
       <Head>
@@ -12,7 +12,7 @@ export default function App({ Component, pageProps }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
       </Head>
-      <SessionProvider>
+      <SessionProvider session={session}>
         <Component {...pageProps} />
       </SessionProvider>
         <Script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossOrigin="anonymous" />

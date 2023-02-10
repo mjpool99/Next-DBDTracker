@@ -13,6 +13,7 @@ export default function Page() {
             setError("");
             setLoading(true);
             const data = await signIn('credentials', {
+                callbackUrl: "/dashboard",
                 email: emailRef.current.value,
                 password: passwordRef.current.value
             })

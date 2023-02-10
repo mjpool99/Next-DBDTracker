@@ -21,13 +21,6 @@ export const authOptions = {
   pages: {
     signIn: "/auth/signin"
   },
-  callbacks: {
-    jwt(params){
-      if(params.user){
-        return params.token
-      }
-    }
-  },
   secret: process.env.NEXTAUTH_SECRET
 }
 export default NextAuth(authOptions)
