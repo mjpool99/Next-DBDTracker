@@ -1,4 +1,4 @@
 export { default } from "next-auth/middleware"
 
 
-export const config = { matcher: '/dashboard/:page*' }
+export const config = { runtime: "edge", matcher: '/dashboard/:page*' }
