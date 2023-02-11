@@ -19,7 +19,7 @@ export default function Page({currentUser}) {
 export async function getServerSideProps(context) {
   const session = await getServerSession(context.req, context.res, authOptions);
   const res = await axios({
-      url: "https://us-central1-dbdtracker.cloudfunctions.net/getUser",
+      url: `${process.env.FUNCTIONS_URL}/getUser`,
       method: "POST",
       data: {
           email: session?.user?.email

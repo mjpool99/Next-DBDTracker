@@ -14,6 +14,7 @@ export default function Page({userData}) {
     const matches = userData?.matches
     const displayName = userData?.user?.displayName
     const uid = userData?.user?.uid
+    const functions = userData?.functions
     return (
         <DashboardLayout data={{displayName: displayName}}>
             <div className='container'>
@@ -28,7 +29,7 @@ export default function Page({userData}) {
                     <AllMatches data={{ data: matches, user: uid }} />
                 </div>
 
-                <UploadMatch data={uid} />
+                <UploadMatch data={{user: uid, functions: functions}} />
             </div>
         </DashboardLayout>
     )
@@ -37,19 +38,19 @@ export default function Page({userData}) {
 export async function getServerSideProps(context){
         const session = await getServerSession(context.req, context.res, authOptions);
         const currentUser = await axios({
-            url: "https://us-central1-dbdtracker.cloudfunctions.net/getUser",
+            url: `${process.env.FUNCTIONS_URL}/getUser`,
             method: "POST",
             data: {
                 email: session?.user?.email
             }
         })
         const survivorMatches = await axios({
-            url: "https://us-central1-dbdtracker.cloudfunctions.net/getSurvivorMatches",
+            url: `${process.env.FUNCTIONS_URL}/getSurvivorMatches`,
             method: "POST",
             data: {
                 user: currentUser?.data?.uid
             }
         })
-        const userData = {matches: survivorMatches?.data, user: currentUser?.data }
+        const userData = {matches: survivorMatches?.data, user: currentUser?.data, functions: process.env.FUNCTIONS_URL }
         return {props: { userData }}
 }

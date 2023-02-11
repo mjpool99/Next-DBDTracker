@@ -6,7 +6,8 @@ import { useRouter } from 'next/navigation';
 
 export default function UploadMatch(props) {
     const router = useRouter();
-    const user = props?.data
+    const user = props?.data?.user
+    const functions = props?.data?.functions
     const [message, setMessage] = useState("");
     const [loading, setLoading] = useState(false);
     const mapRef = useRef();
@@ -23,7 +24,7 @@ export default function UploadMatch(props) {
         try {
           setLoading(true);
         const res = await axios({
-            url: "https://us-central1-dbdtracker.cloudfunctions.net/uploadSurvivorMatches",
+            url: `${functions}/uploadSurvivorMatches`,
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
