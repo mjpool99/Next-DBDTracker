@@ -15,4 +15,8 @@ export default withAuth(
     }
 )
 
+<<<<<<< HEAD
 export const config = {matcher: ["/dashboard/:page*"]}
+=======
+export const config = { runtime: "edge", matcher: '/dashboard/:page*' }
+>>>>>>> cd256d2fb5644291db35bfbebfc48cea48d98274
